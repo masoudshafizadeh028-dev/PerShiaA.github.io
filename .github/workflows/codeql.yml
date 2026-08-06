@@ -19,7 +19,7 @@ on:
   schedule:
     - cron: '35 14 * * 6'
 
-jobs:
+jobs: '1'
   analyze:
     name: Analyze (${{ matrix.language }})
     # Runner size impacts CodeQL analysis time. To learn more, please see:
@@ -37,7 +37,7 @@ jobs:
 
       # only required for workflows in private repositories
       actions: read
-      contents: read
+      contents: readp
 
     strategy:
       fail-fast: false
